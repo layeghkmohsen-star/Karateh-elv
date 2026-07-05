@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Karatech ELV · 7 QC Tools</title>
+    <style>
+        *{margin:0;padding:0;box-sizing:border-box}
+        body{background:#0d0e12;color:#eef0f4;font-family:Tahoma,sans-serif;padding:40px 20px}
+        .container{max-width:1000px;margin:0 auto}
+        .header{display:flex;justify-content:space-between;align-items:center;padding:16px 30px;background:#1e2128;border-radius:16px;margin-bottom:30px;flex-wrap:wrap;gap:10px}
+        .brand{font-weight:700;font-size:1.5rem;color:#fff}
+        .brand span{color:#d4af37}
+        .lang-btn{background:transparent;border:1px solid #333;color:#8e95a5;padding:5px 14px;border-radius:30px;cursor:pointer;font-size:.8rem;transition:.2s}
+        .lang-btn.active{background:#5b3b8c;border-color:#d4af37;color:#fff}
+        .lang-btn:hover{background:#5b3b8c;color:#fff}
+        .lang-switch{display:flex;gap:6px}
+        h1{color:#d4af37;font-size:2.2rem;margin-bottom:10px}
+        .sub{color:#8e95a5;font-size:1rem;line-height:1.8;margin-bottom:25px}
+        .section{background:#1e2128;padding:20px;border-radius:12px;margin-bottom:15px;border:1px solid rgba(212,175,55,0.08)}
+        .section h2{color:#d4af37;font-size:1.3rem;margin-bottom:10px}
+        .section p{color:#b0b8c5;line-height:1.8;margin-bottom:10px}
+        .section ul{list-style:none;padding:0}
+        .section ul li{color:#b0b8c5;padding:6px 0;border-bottom:1px solid rgba(255,255,255,0.04);display:flex;align-items:center;gap:10px}
+        .section ul li::before{content:"▸ ";color:#d4af37;font-weight:700}
+        .back{text-align:center;margin-top:30px}
+        .back a{color:#d4af37;text-decoration:none;font-weight:600;cursor:pointer}
+        .back a:hover{text-decoration:underline}
+        .lang-persian{direction:rtl}
+        .lang-persian .header{flex-direction:row-reverse}
+        @media(max-width:768px){h1{font-size:1.8rem}.header{flex-direction:column;align-items:stretch}}
+    </style>
+</head>
+<body>
+<div class="container">
+
+    <div class="header">
+        <div class="brand">KARATECH <span>ELV</span></div>
+        <div class="lang-switch">
+            <button class="lang-btn active" data-lang="en">EN</button>
+            <button class="lang-btn" data-lang="fa">FA</button>
+        </div>
+    </div>
+
+    <h1 id="title">🛠️ 7 QC Tools</h1>
+    <div class="sub" id="desc">The seven basic quality control tools used to analyze data, identify root causes, and drive process improvement.</div>
+
+    <div class="section">
+        <h2 id="s1">🔹 What are the 7 QC Tools?</h2>
+        <p id="s1p">The 7 QC Tools are a set of simple, graphical techniques introduced by Kaoru Ishikawa for identifying and solving quality-related problems. They are widely used in manufacturing and engineering for root cause analysis, process monitoring, and continuous improvement.</p>
+    </div>
+
+    <div class="section">
+        <h2 id="s2">🔹 The Seven Tools</h2>
+        <ul id="list1">
+            <li><b>Cause-and-Effect Diagram</b> – Fishbone/Ishikawa diagram for root cause analysis</li>
+            <li><b>Check Sheet</b> – Structured form for collecting and recording data</li>
+            <li><b>Control Chart</b> – Tracks process performance over time against control limits</li>
+            <li><b>Histogram</b> – Bar chart showing the distribution of data</li>
+            <li><b>Pareto Chart</b> – Ranks causes by frequency to focus on the vital few</li>
+            <li><b>Scatter Diagram</b> – Shows the relationship between two variables</li>
+            <li><b>Stratification / Flowchart</b> – Separates data by category or maps the process flow</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2 id="s3">🔹 Why They Matter</h2>
+        <p id="s3p">These tools require no advanced statistical training, making them accessible to operators and engineers alike. Together they cover roughly 95% of quality-related problems encountered on the shop floor, and they form the foundation for more advanced methodologies such as Six Sigma and SPC.</p>
+    </div>
+
+    <div class="section">
+        <h2 id="s4">🔹 Example: Reducing Defects on an Assembly Line</h2>
+        <p id="s4p">A team collects defect data using a check sheet, ranks defect types with a Pareto chart to find the top contributors, then uses a fishbone diagram to brainstorm root causes for the leading defect. A control chart is then used to confirm the process has stabilized after corrective actions are implemented.</p>
+    </div>
+
+    <div class="back">
+        <a href="javascript:history.back()" id="backlink">← Back</a>
+    </div>
+
+</div>
+
+<script>
+    const lang = {
+        en: {
+            title: '🛠️ 7 QC Tools',
+            desc: 'The seven basic quality control tools used to analyze data, identify root causes, and drive process improvement.',
+            s1: '🔹 What are the 7 QC Tools?',
+            s1p: 'The 7 QC Tools are a set of simple, graphical techniques introduced by Kaoru Ishikawa for identifying and solving quality-related problems. They are widely used in manufacturing and engineering for root cause analysis, process monitoring, and continuous improvement.',
+            s2: '🔹 The Seven Tools',
+            list1: ['Cause-and-Effect Diagram – Fishbone/Ishikawa diagram for root cause analysis','Check Sheet – Structured form for collecting and recording data','Control Chart – Tracks process performance over time against control limits','Histogram – Bar chart showing the distribution of data','Pareto Chart – Ranks causes by frequency to focus on the vital few','Scatter Diagram – Shows the relationship between two variables','Stratification / Flowchart – Separates data by category or maps the process flow'],
+            s3: '🔹 Why They Matter',
+            s3p: 'These tools require no advanced statistical training, making them accessible to operators and engineers alike. Together they cover roughly 95% of quality-related problems encountered on the shop floor, and they form the foundation for more advanced methodologies such as Six Sigma and SPC.',
+            s4: '🔹 Example: Reducing Defects on an Assembly Line',
+            s4p: 'A team collects defect data using a check sheet, ranks defect types with a Pareto chart to find the top contributors, then uses a fishbone diagram to brainstorm root causes for the leading defect. A control chart is then used to confirm the process has stabilized after corrective actions are implemented.',
+            back: '← Back'
+        },
+        fa: {
+            title: '🛠️ ۷ ابزار کیفیت',
+            desc: 'هفت ابزار پایه کنترل کیفیت که برای تحلیل داده‌ها، شناسایی علل ریشه‌ای و بهبود فرآیند استفاده می‌شوند.',
+            s1: '🔹 ۷ ابزار کیفیت چیست؟',
+            s1p: '۷ ابزار کیفیت مجموعه‌ای از تکنیک‌های ساده و گرافیکی است که توسط کائورو ایشیکاوا برای شناسایی و حل مشکلات مرتبط با کیفیت معرفی شد. این ابزارها به‌طور گسترده در تولید و مهندسی برای تحلیل علت ریشه‌ای، نظارت بر فرآیند و بهبود مستمر استفاده می‌شوند.',
+            s2: '🔹 هفت ابزار',
+            list1: ['نمودار علت و معلول – نمودار استخوان ماهی برای تحلیل علت ریشه‌ای','برگه کنترل – فرم ساختاریافته برای جمع‌آوری و ثبت داده‌ها','نمودار کنترل – ردیابی عملکرد فرآیند در طول زمان نسبت به حدود کنترل','هیستوگرام – نمودار میله‌ای که توزیع داده‌ها را نشان می‌دهد','نمودار پارتو – رتبه‌بندی علل بر اساس فراوانی برای تمرکز بر موارد حیاتی','نمودار پراکندگی – رابطه بین دو متغیر را نشان می‌دهد','طبقه‌بندی / فلوچارت – جداسازی داده‌ها بر اساس دسته یا نگاشت جریان فرآیند'],
+            s3: '🔹 چرا اهمیت دارند',
+            s3p: 'این ابزارها به آموزش پیشرفته آماری نیاز ندارند و برای اپراتورها و مهندسان به یک اندازه قابل دسترس هستند. این ابزارها در مجموع حدود ۹۵٪ از مشکلات مرتبط با کیفیت در کف کارخانه را پوشش می‌دهند و پایه‌ای برای روش‌های پیشرفته‌تر مانند شش سیگما و SPC هستند.',
+            s4: '🔹 مثال: کاهش نقص در خط مونتاژ',
+            s4p: 'یک تیم داده‌های نقص را با استفاده از برگه کنترل جمع‌آوری می‌کند، انواع نقص را با نمودار پارتو رتبه‌بندی می‌کند تا مهم‌ترین موارد را بیابد، سپس از نمودار استخوان ماهی برای طوفان فکری علل ریشه‌ای نقص اصلی استفاده می‌کند. نمودار کنترل سپس برای تأیید پایداری فرآیند پس از اجرای اقدامات اصلاحی استفاده می‌شود.',
+            back: '← بازگشت'
+        }
+    };
+
+    function setLang(l) {
+        const t = lang[l];
+        if (!t) return;
+        document.getElementById('title').textContent = t.title;
+        document.getElementById('desc').textContent = t.desc;
+        document.getElementById('s1').textContent = t.s1;
+        document.getElementById('s1p').textContent = t.s1p;
+        document.getElementById('s2').textContent = t.s2;
+        document.getElementById('s3').textContent = t.s3;
+        document.getElementById('s3p').textContent = t.s3p;
+        document.getElementById('s4').textContent = t.s4;
+        document.getElementById('s4p').textContent = t.s4p;
+        document.getElementById('backlink').textContent = t.back;
+
+        const ul1 = document.getElementById('list1');
+        ul1.innerHTML = '';
+        t.list1.forEach(item => { const li = document.createElement('li'); li.textContent = item; ul1.appendChild(li); });
+
+        document.querySelectorAll('.lang-btn').forEach(b => b.classList.toggle('active', b.dataset.lang === l));
+        document.body.classList.toggle('lang-persian', l === 'fa');
+        localStorage.setItem('karatech-lang', l);
+    }
+
+    document.querySelectorAll('.lang-btn').forEach(btn => {
+        btn.onclick = function() { setLang(this.dataset.lang); };
+    });
+
+    const savedLang = localStorage.getItem('karatech-lang') || 'en';
+    setLang(savedLang);
+</script>
+
+</body>
+</html>

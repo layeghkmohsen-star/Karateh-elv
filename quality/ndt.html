@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Karatech ELV · NDT</title>
+    <style>
+        *{margin:0;padding:0;box-sizing:border-box}
+        body{background:#0d0e12;color:#eef0f4;font-family:Tahoma,sans-serif;padding:40px 20px}
+        .container{max-width:1000px;margin:0 auto}
+        .header{display:flex;justify-content:space-between;align-items:center;padding:16px 30px;background:#1e2128;border-radius:16px;margin-bottom:30px;flex-wrap:wrap;gap:10px}
+        .brand{font-weight:700;font-size:1.5rem;color:#fff}
+        .brand span{color:#d4af37}
+        .lang-btn{background:transparent;border:1px solid #333;color:#8e95a5;padding:5px 14px;border-radius:30px;cursor:pointer;font-size:.8rem;transition:.2s}
+        .lang-btn.active{background:#5b3b8c;border-color:#d4af37;color:#fff}
+        .lang-btn:hover{background:#5b3b8c;color:#fff}
+        .lang-switch{display:flex;gap:6px}
+        h1{color:#d4af37;font-size:2.2rem;margin-bottom:10px}
+        .sub{color:#8e95a5;font-size:1rem;line-height:1.8;margin-bottom:25px}
+        .section{background:#1e2128;padding:20px;border-radius:12px;margin-bottom:15px;border:1px solid rgba(212,175,55,0.08)}
+        .section h2{color:#d4af37;font-size:1.3rem;margin-bottom:10px}
+        .section p{color:#b0b8c5;line-height:1.8;margin-bottom:10px}
+        .section ul{list-style:none;padding:0}
+        .section ul li{color:#b0b8c5;padding:6px 0;border-bottom:1px solid rgba(255,255,255,0.04);display:flex;align-items:center;gap:10px}
+        .section ul li::before{content:"▸ ";color:#d4af37;font-weight:700}
+        .back{text-align:center;margin-top:30px}
+        .back a{color:#d4af37;text-decoration:none;font-weight:600;cursor:pointer}
+        .back a:hover{text-decoration:underline}
+        .lang-persian{direction:rtl}
+        .lang-persian .header{flex-direction:row-reverse}
+        @media(max-width:768px){h1{font-size:1.8rem}.header{flex-direction:column;align-items:stretch}}
+    </style>
+</head>
+<body>
+<div class="container">
+
+    <div class="header">
+        <div class="brand">KARATECH <span>ELV</span></div>
+        <div class="lang-switch">
+            <button class="lang-btn active" data-lang="en">EN</button>
+            <button class="lang-btn" data-lang="fa">FA</button>
+        </div>
+    </div>
+
+    <h1 id="title">🔬 Non-Destructive Testing (NDT)</h1>
+    <div class="sub" id="desc">Inspection methods that evaluate materials, components, and welds without causing damage, ensuring integrity and safety.</div>
+
+    <div class="section">
+        <h2 id="s1">🔹 What is NDT?</h2>
+        <p id="s1p">Non-Destructive Testing is a group of inspection techniques used to evaluate the properties, integrity, and quality of a material, component, or weld without permanently altering it. NDT is essential for detecting surface and internal defects in critical equipment, piping, and structures.</p>
+    </div>
+
+    <div class="section">
+        <h2 id="s2">🔹 Common NDT Methods</h2>
+        <ul id="list1">
+            <li><b>Visual Testing (VT)</b> – Direct or remote visual examination of surfaces</li>
+            <li><b>Radiographic Testing (RT)</b> – X-ray or gamma-ray imaging of internal structure</li>
+            <li><b>Ultrasonic Testing (UT)</b> – High-frequency sound waves detect internal flaws</li>
+            <li><b>Magnetic Particle Testing (MT)</b> – Detects surface and near-surface defects in ferromagnetic materials</li>
+            <li><b>Liquid Penetrant Testing (PT)</b> – Reveals surface-breaking defects using dye penetrants</li>
+            <li><b>Eddy Current Testing (ET)</b> – Detects surface defects and measures conductivity in conductive materials</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2 id="s3">🔹 Where NDT is Applied</h2>
+        <p id="s3p">NDT is widely used in welding inspection, pressure vessel and piping integrity checks, structural steel verification, pipeline inspection, and in-service equipment monitoring. Certification bodies such as ASNT provide standardized qualification levels (Level I, II, III) for NDT technicians.</p>
+    </div>
+
+    <div class="section">
+        <h2 id="s4">🔹 Example: Weld Inspection on a Pressure Vessel</h2>
+        <p id="s4p">Before a pressure vessel is put into service, welds are inspected using radiographic testing to check for internal porosity or cracks, followed by ultrasonic testing to verify weld thickness and detect any subsurface flaws that radiography may have missed. Results are compared against acceptance criteria in the relevant code, such as ASME Section V.</p>
+    </div>
+
+    <div class="back">
+        <a href="javascript:history.back()" id="backlink">← Back</a>
+    </div>
+
+</div>
+
+<script>
+    const lang = {
+        en: {
+            title: '🔬 Non-Destructive Testing (NDT)',
+            desc: 'Inspection methods that evaluate materials, components, and welds without causing damage, ensuring integrity and safety.',
+            s1: '🔹 What is NDT?',
+            s1p: 'Non-Destructive Testing is a group of inspection techniques used to evaluate the properties, integrity, and quality of a material, component, or weld without permanently altering it. NDT is essential for detecting surface and internal defects in critical equipment, piping, and structures.',
+            s2: '🔹 Common NDT Methods',
+            list1: ['Visual Testing (VT) – Direct or remote visual examination of surfaces','Radiographic Testing (RT) – X-ray or gamma-ray imaging of internal structure','Ultrasonic Testing (UT) – High-frequency sound waves detect internal flaws','Magnetic Particle Testing (MT) – Detects surface and near-surface defects in ferromagnetic materials','Liquid Penetrant Testing (PT) – Reveals surface-breaking defects using dye penetrants','Eddy Current Testing (ET) – Detects surface defects and measures conductivity in conductive materials'],
+            s3: '🔹 Where NDT is Applied',
+            s3p: 'NDT is widely used in welding inspection, pressure vessel and piping integrity checks, structural steel verification, pipeline inspection, and in-service equipment monitoring. Certification bodies such as ASNT provide standardized qualification levels (Level I, II, III) for NDT technicians.',
+            s4: '🔹 Example: Weld Inspection on a Pressure Vessel',
+            s4p: 'Before a pressure vessel is put into service, welds are inspected using radiographic testing to check for internal porosity or cracks, followed by ultrasonic testing to verify weld thickness and detect any subsurface flaws that radiography may have missed. Results are compared against acceptance criteria in the relevant code, such as ASME Section V.',
+            back: '← Back'
+        },
+        fa: {
+            title: '🔬 تست غیرمخرب (NDT)',
+            desc: 'روش‌های بازرسی که مواد، قطعات و جوش‌ها را بدون ایجاد آسیب ارزیابی می‌کنند و از یکپارچگی و ایمنی اطمینان حاصل می‌کنند.',
+            s1: '🔹 NDT چیست؟',
+            s1p: 'تست غیرمخرب گروهی از تکنیک‌های بازرسی است که برای ارزیابی خواص، یکپارچگی و کیفیت یک ماده، قطعه یا جوش بدون تغییر دائمی آن استفاده می‌شود. NDT برای شناسایی نقص‌های سطحی و داخلی در تجهیزات حیاتی، لوله‌کشی و سازه‌ها ضروری است.',
+            s2: '🔹 روش‌های رایج NDT',
+            list1: ['تست بصری (VT) – بازرسی مستقیم یا از راه دور سطوح','تست پرتونگاری (RT) – تصویربرداری با اشعه ایکس یا گاما از ساختار داخلی','تست فراصوتی (UT) – امواج صوتی با فرکانس بالا نقص‌های داخلی را شناسایی می‌کنند','تست ذرات مغناطیسی (MT) – شناسایی نقص‌های سطحی و نزدیک سطح در مواد فرومغناطیسی','تست مایع نافذ (PT) – آشکارسازی نقص‌های سطحی با استفاده از رنگ‌های نافذ','تست جریان گردابی (ET) – شناسایی نقص‌های سطحی و اندازه‌گیری هدایت در مواد رسانا'],
+            s3: '🔹 کاربردهای NDT',
+            s3p: 'NDT به‌طور گسترده در بازرسی جوش، بررسی یکپارچگی مخازن تحت فشار و لوله‌کشی، تأیید سازه‌های فولادی، بازرسی خط لوله و نظارت بر تجهیزات در حال سرویس استفاده می‌شود. نهادهای صدور گواهینامه مانند ASNT سطوح صلاحیت استاندارد (سطح I، II، III) را برای تکنسین‌های NDT ارائه می‌دهند.',
+            s4: '🔹 مثال: بازرسی جوش در مخزن تحت فشار',
+            s4p: 'قبل از قرار گرفتن یک مخزن تحت فشار در سرویس، جوش‌ها با استفاده از تست پرتونگاری برای بررسی منافذ یا ترک‌های داخلی بازرسی می‌شوند، و سپس تست فراصوتی برای تأیید ضخامت جوش و شناسایی هرگونه نقص زیرسطحی که ممکن است پرتونگاری از دست داده باشد انجام می‌شود. نتایج با معیارهای پذیرش در استاندارد مربوطه، مانند ASME Section V، مقایسه می‌شوند.',
+            back: '← بازگشت'
+        }
+    };
+
+    function setLang(l) {
+        const t = lang[l];
+        if (!t) return;
+        document.getElementById('title').textContent = t.title;
+        document.getElementById('desc').textContent = t.desc;
+        document.getElementById('s1').textContent = t.s1;
+        document.getElementById('s1p').textContent = t.s1p;
+        document.getElementById('s2').textContent = t.s2;
+        document.getElementById('s3').textContent = t.s3;
+        document.getElementById('s3p').textContent = t.s3p;
+        document.getElementById('s4').textContent = t.s4;
+        document.getElementById('s4p').textContent = t.s4p;
+        document.getElementById('backlink').textContent = t.back;
+
+        const ul1 = document.getElementById('list1');
+        ul1.innerHTML = '';
+        t.list1.forEach(item => { const li = document.createElement('li'); li.textContent = item; ul1.appendChild(li); });
+
+        document.querySelectorAll('.lang-btn').forEach(b => b.classList.toggle('active', b.dataset.lang === l));
+        document.body.classList.toggle('lang-persian', l === 'fa');
+        localStorage.setItem('karatech-lang', l);
+    }
+
+    document.querySelectorAll('.lang-btn').forEach(btn => {
+        btn.onclick = function() { setLang(this.dataset.lang); };
+    });
+
+    const savedLang = localStorage.getItem('karatech-lang') || 'en';
+    setLang(savedLang);
+</script>
+
+</body>
+</html>

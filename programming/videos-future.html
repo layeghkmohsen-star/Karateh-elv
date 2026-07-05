@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Karatech ELV · Videos & Future</title>
+    <style>
+        *{margin:0;padding:0;box-sizing:border-box}
+        body{background:#0d0e12;color:#eef0f4;font-family:Tahoma,sans-serif;padding:40px 20px}
+        .container{max-width:1000px;margin:0 auto}
+        .header{display:flex;justify-content:space-between;align-items:center;padding:16px 30px;background:#1e2128;border-radius:16px;margin-bottom:30px;flex-wrap:wrap;gap:10px}
+        .brand{font-weight:700;font-size:1.5rem;color:#fff}
+        .brand span{color:#d4af37}
+        .lang-btn{background:transparent;border:1px solid #333;color:#8e95a5;padding:5px 14px;border-radius:30px;cursor:pointer;font-size:.8rem;transition:.2s}
+        .lang-btn.active{background:#5b3b8c;border-color:#d4af37;color:#fff}
+        .lang-btn:hover{background:#5b3b8c;color:#fff}
+        .lang-switch{display:flex;gap:6px}
+        h1{color:#d4af37;font-size:2.2rem;margin-bottom:10px}
+        .sub{color:#8e95a5;font-size:1rem;line-height:1.8;margin-bottom:25px}
+        .section{background:#1e2128;padding:20px;border-radius:12px;margin-bottom:15px;border:1px solid rgba(212,175,55,0.08)}
+        .section h2{color:#d4af37;font-size:1.3rem;margin-bottom:10px}
+        .section p{color:#b0b8c5;line-height:1.8;margin-bottom:10px}
+        .section ul{list-style:none;padding:0}
+        .section ul li{color:#b0b8c5;padding:6px 0;border-bottom:1px solid rgba(255,255,255,0.04);display:flex;align-items:center;gap:10px}
+        .section ul li::before{content:"▸ ";color:#d4af37;font-weight:700}
+        .back{text-align:center;margin-top:30px}
+        .back a{color:#d4af37;text-decoration:none;font-weight:600;cursor:pointer}
+        .back a:hover{text-decoration:underline}
+        .lang-persian{direction:rtl}
+        .lang-persian .header{flex-direction:row-reverse}
+        @media(max-width:768px){h1{font-size:1.8rem}.header{flex-direction:column;align-items:stretch}}
+    </style>
+</head>
+<body>
+<div class="container">
+
+    <div class="header">
+        <div class="brand">KARATECH <span>ELV</span></div>
+        <div class="lang-switch">
+            <button class="lang-btn active" data-lang="en">EN</button>
+            <button class="lang-btn" data-lang="fa">FA</button>
+        </div>
+    </div>
+
+    <h1 id="title">🎬 Videos & Future of Industrial Programming</h1>
+    <div class="sub" id="desc">Curated video tutorials and insights into the future trends and technologies in PLC, HMI, SCADA, and industrial network programming.</div>
+
+    <div class="section">
+        <h2 id="s1">🔹 Recommended Video Channels</h2>
+        <ul id="list1">
+            <li>RealPars – PLC and industrial programming tutorials</li>
+            <li>PLC Academy – Structured ladder logic and ST training</li>
+            <li>Siemens Automation – TIA Portal and STEP7 official training</li>
+            <li>Rockwell Automation – Studio 5000 and ControlLogix demos</li>
+            <li>SCADAcore – SCADA and HMI programming walkthroughs</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2 id="s2">🔹 Popular Video Topics</h2>
+        <ul id="list2">
+            <li>Ladder Logic, Structured Text, and Function Block Diagram programming</li>
+            <li>HMI screen design and SCADA architecture</li>
+            <li>Modbus, Profinet, and Ethernet/IP configuration</li>
+            <li>Analog scaling, timers, counters, and PID loops in code</li>
+            <li>VFD parameterization and motor control programming</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2 id="s3">🔹 Future Trends in Industrial Programming</h2>
+        <ul id="list3">
+            <li>IEC 61499 and model-based, portable control logic</li>
+            <li>OPC UA as the unifying protocol for IT/OT convergence</li>
+            <li>Low-code and simulation-driven PLC development environments</li>
+            <li>Containerized and virtualized PLC/SCADA runtimes</li>
+            <li>Cybersecurity-hardened programming practices for control systems</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2 id="s4">🔹 What's Next in Industrial Programming?</h2>
+        <p id="s4p">The future of industrial programming will be shaped by open standards, virtualization, and tighter integration between control systems and enterprise IT. Programmers will increasingly need skills in networking, cybersecurity, and data engineering alongside traditional PLC, HMI, and SCADA development to support smart manufacturing and Industry 4.0 initiatives.</p>
+    </div>
+
+    <div class="back">
+        <a href="javascript:history.back()" id="backlink">← Back</a>
+    </div>
+
+</div>
+
+<script>
+    const lang = {
+        en: {
+            title: '🎬 Videos & Future of Industrial Programming',
+            desc: 'Curated video tutorials and insights into the future trends and technologies in PLC, HMI, SCADA, and industrial network programming.',
+            s1: '🔹 Recommended Video Channels',
+            list1: ['RealPars – PLC and industrial programming tutorials','PLC Academy – Structured ladder logic and ST training','Siemens Automation – TIA Portal and STEP7 official training','Rockwell Automation – Studio 5000 and ControlLogix demos','SCADAcore – SCADA and HMI programming walkthroughs'],
+            s2: '🔹 Popular Video Topics',
+            list2: ['Ladder Logic, Structured Text, and Function Block Diagram programming','HMI screen design and SCADA architecture','Modbus, Profinet, and Ethernet/IP configuration','Analog scaling, timers, counters, and PID loops in code','VFD parameterization and motor control programming'],
+            s3: '🔹 Future Trends in Industrial Programming',
+            list3: ['IEC 61499 and model-based, portable control logic','OPC UA as the unifying protocol for IT/OT convergence','Low-code and simulation-driven PLC development environments','Containerized and virtualized PLC/SCADA runtimes','Cybersecurity-hardened programming practices for control systems'],
+            s4: '🔹 What\'s Next in Industrial Programming?',
+            s4p: 'The future of industrial programming will be shaped by open standards, virtualization, and tighter integration between control systems and enterprise IT. Programmers will increasingly need skills in networking, cybersecurity, and data engineering alongside traditional PLC, HMI, and SCADA development to support smart manufacturing and Industry 4.0 initiatives.',
+            back: '← Back'
+        },
+        fa: {
+            title: '🎬 ویدئوها و آینده برنامه‌نویسی صنعتی',
+            desc: 'آموزش‌های ویدئویی منتخب و بینش‌هایی درباره روندها و فناوری‌های آینده در برنامه‌نویسی PLC، HMI، SCADA و شبکه‌های صنعتی.',
+            s1: '🔹 کانال‌های ویدئویی پیشنهادی',
+            list1: ['RealPars – آموزش PLC و برنامه‌نویسی صنعتی','PLC Academy – آموزش ساختاریافته نردبانی و ST','Siemens Automation – آموزش رسمی TIA Portal و STEP7','Rockwell Automation – دمو Studio 5000 و ControlLogix','SCADAcore – آموزش برنامه‌نویسی SCADA و HMI'],
+            s2: '🔹 موضوعات محبوب ویدئویی',
+            list2: ['برنامه‌نویسی نردبانی، متن ساختاریافته و FBD','طراحی صفحات HMI و معماری SCADA','پیکربندی Modbus، Profinet و Ethernet/IP','مقیاس‌سازی آنالوگ، تایمر، کانتر و حلقه‌های PID در کد','پارامتردهی VFD و برنامه‌نویسی کنترل موتور'],
+            s3: '🔹 روندهای آینده در برنامه‌نویسی صنعتی',
+            list3: ['IEC 61499 و منطق کنترل قابل‌حمل مبتنی بر مدل','OPC UA به‌عنوان پروتکل یکپارچه‌ساز IT/OT','محیط‌های توسعه کم‌کد و شبیه‌سازی‌محور PLC','زمان‌های اجرای مجازی‌سازی‌شده PLC/SCADA','رویه‌های برنامه‌نویسی مقاوم در برابر تهدیدات سایبری'],
+            s4: '🔹 آینده برنامه‌نویسی صنعتی چیست؟',
+            s4p: 'آینده برنامه‌نویسی صنعتی توسط استانداردهای باز، مجازی‌سازی و یکپارچگی بیشتر بین سیستم‌های کنترل و فناوری اطلاعات سازمانی شکل خواهد گرفت. برنامه‌نویسان به مهارت‌هایی در شبکه، امنیت سایبری و مهندسی داده در کنار دانش سنتی PLC، HMI و SCADA برای پشتیبانی از تولید هوشمند و ابتکارات صنعت ۴.۰ نیاز خواهند داشت.',
+            back: '← بازگشت'
+        }
+    };
+
+    function setLang(l) {
+        const t = lang[l];
+        if (!t) return;
+        document.getElementById('title').textContent = t.title;
+        document.getElementById('desc').textContent = t.desc;
+        document.getElementById('s1').textContent = t.s1;
+        document.getElementById('s2').textContent = t.s2;
+        document.getElementById('s3').textContent = t.s3;
+        document.getElementById('s4').textContent = t.s4;
+        document.getElementById('s4p').textContent = t.s4p;
+        document.getElementById('backlink').textContent = t.back;
+
+        const ul1 = document.getElementById('list1');
+        ul1.innerHTML = '';
+        t.list1.forEach(item => { const li = document.createElement('li'); li.textContent = item; ul1.appendChild(li); });
+
+        const ul2 = document.getElementById('list2');
+        ul2.innerHTML = '';
+        t.list2.forEach(item => { const li = document.createElement('li'); li.textContent = item; ul2.appendChild(li); });
+
+        const ul3 = document.getElementById('list3');
+        ul3.innerHTML = '';
+        t.list3.forEach(item => { const li = document.createElement('li'); li.textContent = item; ul3.appendChild(li); });
+
+        document.querySelectorAll('.lang-btn').forEach(b => b.classList.toggle('active', b.dataset.lang === l));
+        document.body.classList.toggle('lang-persian', l === 'fa');
+        localStorage.setItem('karatech-lang', l);
+    }
+
+    document.querySelectorAll('.lang-btn').forEach(btn => {
+        btn.onclick = function() { setLang(this.dataset.lang); };
+    });
+
+    const savedLang = localStorage.getItem('karatech-lang') || 'en';
+    setLang(savedLang);
+</script>
+
+</body>
+</html>
